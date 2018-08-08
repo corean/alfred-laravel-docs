@@ -58,7 +58,7 @@ if (empty($results)) {
 $urls = [];
 
 foreach ($results as $hit) {
-    $url = sprintf("https://laravel.com/docs/%s/%s", $branch, $hit['link']);
+    $url = sprintf("https://laravel.kr/docs/%s/%s", $branch, $hit['link']);
 
     if (in_array($url, $urls)) {
         continue;
