@@ -1,7 +1,6 @@
 <?php
 
 use Alfred\Workflows\Workflow;
-
 use AlgoliaSearch\Client as Algolia;
 use AlgoliaSearch\Version as AlgoliaUserAgent;
 
@@ -15,7 +14,7 @@ if (! empty(trim($matches[1]))) {
     $branch = $matches[1];
     $query = $matches[2];
 } else {
-    $branch = empty($_ENV['branch']) ? 'master' : $_ENV['branch'];
+    $branch = empty($_ENV['branch']) ? '5.5' : $_ENV['branch'];
 }
 
 $subtext = empty($_ENV['alfred_theme_subtext']) ? '0' : $_ENV['alfred_theme_subtext'];
